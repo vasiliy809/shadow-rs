@@ -39,3 +39,4 @@ mapper = []
 [profile.release]
 strip = true
 opt-level = "z"
+
