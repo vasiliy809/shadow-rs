@@ -1,0 +1,38 @@
+; shadow.inf
+
+[Version]
+Signature = "$WINDOWS NT$"
+Class = System
+ClassGuid = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider = %ManufacturerName%
+CatalogFile = shadow.cat
+DriverVer = 03/04/2025,16.12.53.325
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+shadow.sys = 1,,
+
+[DefaultInstall.NTamd64]
+CopyFiles = File_Copy
+AddService = shadow, 0x00000002, shadow_Service_Inst
+
+[File_Copy]
+shadow.sys
+
+[shadow_Service_Inst]
+DisplayName    = %shadow.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\shadow.sys
+
+[Strings]
+ManufacturerName = "test"
+DiskName         = "shadow Installation Disk"
+shadow.SVCDESC    = "shadow Service"
