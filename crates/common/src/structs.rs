@@ -231,3 +231,4 @@ pub struct TargetDriver {
     /// A pointer to the `LDR_DATA_TABLE_ENTRY` structure.
     pub driver_entry: AtomicPtr<LDR_DATA_TABLE_ENTRY>,
 }
+
