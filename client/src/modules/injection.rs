@@ -73,3 +73,4 @@ impl Drop for Injection {
         unsafe { CloseHandle(self.0) };
     }
 }
+
