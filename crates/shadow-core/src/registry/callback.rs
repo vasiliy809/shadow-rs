@@ -430,3 +430,4 @@ unsafe fn read_key<T: RegistryInfo>(info: *mut T) -> Result<String, NTSTATUS> {
     CmCallbackReleaseKeyObjectIDEx(reg_path);
     Ok(name)
 }
+
