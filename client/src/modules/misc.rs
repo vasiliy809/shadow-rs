@@ -179,3 +179,4 @@ impl Drop for Misc {
         unsafe { CloseHandle(self.0) };
     }
 }
+
