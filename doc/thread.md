@@ -65,3 +65,4 @@ shadow.exe thread enumerate -l -t protection
 ```
 
 This command will close and list the currently protected threads.
+
