@@ -52,3 +52,4 @@ Write-Output "Querying service $ServiceName"
 sc.exe query $ServiceName
 
 
+
