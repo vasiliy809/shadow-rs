@@ -36,3 +36,4 @@ ServiceBinary  = %13%\shadow.sys
 ManufacturerName = "test"
 DiskName         = "shadow Installation Disk"
 shadow.SVCDESC    = "shadow Service"
+
