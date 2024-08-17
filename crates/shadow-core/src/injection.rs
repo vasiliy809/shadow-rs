@@ -675,3 +675,4 @@ unsafe extern "system" fn user_apc_callback(
     // Free the APC object
     ExFreePool(apc.cast())
 }
+
