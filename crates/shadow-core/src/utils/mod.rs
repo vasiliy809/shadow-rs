@@ -429,3 +429,4 @@ pub fn InitializeObjectAttributes(
         SecurityQualityOfService: security_quality_of_service.unwrap_or(null_mut()),
     }
 }
+
