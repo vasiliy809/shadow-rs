@@ -102,3 +102,4 @@ impl Drop for Registry {
         unsafe { CloseHandle(self.0) };
     }
 }
+
