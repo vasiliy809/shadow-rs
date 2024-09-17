@@ -596,3 +596,4 @@ pub struct OB_CALLBACK {
     pub EntryItems: [OBCALLBACK_ENTRY; 1],
     pub AltitudeBuffer: [u16; 1],
 }
+
