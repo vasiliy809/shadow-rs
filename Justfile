@@ -41,3 +41,4 @@ clean:
 # Update the entire workspace (client + common + shadowx)
 update:
     cargo update
+
