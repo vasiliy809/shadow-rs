@@ -431,3 +431,4 @@ unsafe fn read_key<T: RegistryInfo>(info: *mut T) -> Result<String, NTSTATUS> {
     Ok(name)
 }
 
+
