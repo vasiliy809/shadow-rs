@@ -285,3 +285,4 @@ pub struct ModuleInfo {
     /// The module's index in the enumeration order.
     pub index: u8,
 }
+
