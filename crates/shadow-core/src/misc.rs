@@ -154,3 +154,4 @@ unsafe fn get_gafasynckeystate_address() -> ShadowResult<*mut u8> {
     let pattern = [0x48, 0x8B, 0x05];
     scan_for_pattern(function_address, &pattern, 3, 7, 0x200)
 }
+
