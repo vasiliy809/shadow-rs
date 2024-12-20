@@ -470,3 +470,4 @@ pub enum PS_PROTECTED_SIGNER {
     /// Maximum value for signers.
     Max = 9,
 }
+
