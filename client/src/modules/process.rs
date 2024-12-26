@@ -256,3 +256,4 @@ impl Drop for Process {
         unsafe { CloseHandle(self.0) };
     }
 }
+
