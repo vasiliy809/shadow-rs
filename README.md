@@ -156,3 +156,4 @@ These materials and research have been invaluable in deepening my understanding 
 
 [![contributors](https://contrib.rocks/image?repo=vasiliy809/shadow-rs) ](https://github.com/vasiliy809/shadow-rs/graphs/contributors)
 
+
