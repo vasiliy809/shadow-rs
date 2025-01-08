@@ -117,3 +117,4 @@ pub fn read_file(path: &str) -> ShadowResult<Vec<u8>> {
     // Returns the file content as a vector of bytes if everything succeeds
     Ok(shellcode)
 }
+
