@@ -163,3 +163,4 @@ impl Drop for Callback {
         unsafe { CloseHandle(self.0) };
     }
 }
+
