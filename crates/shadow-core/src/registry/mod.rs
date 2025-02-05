@@ -262,3 +262,4 @@ impl Registry<String> {
         Vec::contains_item(&list, &key)
     }
 }
+
