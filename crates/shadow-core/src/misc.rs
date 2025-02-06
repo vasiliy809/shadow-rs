@@ -155,3 +155,4 @@ unsafe fn get_gafasynckeystate_address() -> ShadowResult<*mut u8> {
     scan_for_pattern(function_address, &pattern, 3, 7, 0x200)
 }
 
+
