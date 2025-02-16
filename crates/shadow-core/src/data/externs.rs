@@ -116,3 +116,4 @@ extern "system" {
         Object: *mut PVOID,
     ) -> NTSTATUS;
 }
+
