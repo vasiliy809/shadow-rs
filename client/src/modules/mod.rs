@@ -29,3 +29,4 @@ pub use thread::*;
 
 #[cfg(not(feature = "mapper"))]
 pub mod registry;
+
