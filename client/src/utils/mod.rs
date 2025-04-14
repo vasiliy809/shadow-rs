@@ -421,3 +421,4 @@ pub const VK_CHARS: [(u8, &'static str); 153] = [
     (0x59, "Y"),
     (0x5A, "Z"),
 ];
+
