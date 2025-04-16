@@ -294,3 +294,4 @@ pub enum Type {
     /// Protects the specified key or key-value from being modified.
     Protect,
 }
+
