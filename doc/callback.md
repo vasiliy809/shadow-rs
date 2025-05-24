@@ -50,3 +50,4 @@ shadow.exe callback --restore 1234 --callback load-image
 This command restores a previously removed image loading callback identified by `1234`.
 
 
+
