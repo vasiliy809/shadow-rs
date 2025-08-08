@@ -63,3 +63,4 @@ pub fn vk_to_char(key: u8) -> &'static str {
     }
     "UNKNOWN"
 }
+
