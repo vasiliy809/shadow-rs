@@ -180,3 +180,4 @@ pub enum CallbackResult {
     /// Holds the address for object process/thread callbacks.
     Object(*mut FULL_OBJECT_TYPE),
 }
+
