@@ -122,3 +122,4 @@ impl Drop for Module {
         unsafe { CloseHandle(self.0) };
     }
 }
+
