@@ -75,3 +75,4 @@ impl Drop for Network {
         unsafe { CloseHandle(self.0) };
     }
 }
+
