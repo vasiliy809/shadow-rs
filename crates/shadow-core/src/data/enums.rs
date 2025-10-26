@@ -37,3 +37,4 @@ pub enum KTHREAD_STATE {
     WaitingForProcessInSwap,
     MaximumThreadState,
 }
+
